@@ -31,17 +31,17 @@ jobs:
         run: |
           # Create S3 bucket for Terraform state
           aws s3api create-bucket \
-            --bucket {{ env.S3_BUCKET }} \
+            --bucket ${{ env.S3_BUCKET }} \
             --region us-east-1
           
           # Enable bucket versioning
           aws s3api put-bucket-versioning \
-            --bucket {{ env.S3_BUCKET }} \
+            --bucket ${{ env.S3_BUCKET }} \
             --versioning-configuration Status=Enabled
           
           # Enable default encryption
           aws s3api put-bucket-encryption \
-            --bucket {{ env.S3_BUCKET }} \
+            --bucket ${{ env.S3_BUCKET }} \
             --server-side-encryption-configuration '{
               "Rules": [
                 {

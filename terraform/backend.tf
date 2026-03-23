@@ -4,7 +4,7 @@
 
 terraform {
   backend "s3" {
-    bucket         = "terraform-state-spring-boot-app-kvazar"
+    bucket         = "terraform-state-spring-boot-app-kvazar-12"
     key            = "terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true

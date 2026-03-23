@@ -1,3 +1,4 @@
+#TODO change email
 variable "aws_region" {
   description = "AWS region to deploy resources"
   type        = string
@@ -53,5 +54,5 @@ variable "common_tags" {
 variable "alarm_email" {
 description = "Billing alarm email"
   type        = string
-  default     = "marianferenc59@gmail.com"
+  default     = "kucheriavyiyaroslav0@gmail.com"
 }

@@ -5,7 +5,7 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  S3_BUCKET: terraform-state-spring-boot-app-marianf
+  S3_BUCKET: terraform-state-spring-boot-app-kvazar-12
   ECR_REPOSITORY: spring-boot-app
 
 jobs:
